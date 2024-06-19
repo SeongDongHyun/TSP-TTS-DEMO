@@ -4,9 +4,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>TEXT-BASED STYLE PREDICTOR WITH VECTOR QUANTIZATION FOR EXPRESSIVE TEXT-TO-SPEECH</title>
+<title>TSP-TTS: Text-based Style Predictor with Residual Vector Quantization for Expressive Text-to-Speech</title>
 <meta name="generator" content="Jekyll v3.9.0">
-<meta property="og:title" content="TEXT-BASED STYLE PREDICTOR WITH VECTOR QUANTIZATION FOR EXPRESSIVE TEXT-TO-SPEECH">
+<meta property="og:title" content="TSP-TTS: Text-based Style Predictor with Residual Vector Quantization for Expressive Text-to-Speech">
 <meta property="og:locale" content="en_US">
 <link rel="canonical" href="https://seongdonghyun.github.io/TSP-TTS-DEMO/">
 <meta property="og:url" content="https://seongdonghyun.github.io/TSP-TTS-DEMO/">
@@ -22,7 +22,7 @@
 </section>
 
 <section class="main-content">
-<h1 id=""><center> TEXT-BASED STYLE PREDICTOR WITH VECTOR QUANTIZATION FOR EXPRESSIVE TEXT-TO-SPEECH </center></h1>
+<h1 id=""><center> TSP-TTS: Text-based Style Predictor with Residual Vector Quantization for Expressive Text-to-Speech </center></h1>
 
 <center> Donghyun Seong<sup>1</sup>, Hoyoung Lee<sup>2</sup>, and Joon-Hyuk Chang<sup>1</sup></center>
 <br>
@@ -33,8 +33,8 @@
 <p>Expressive text-to-speech (TTS) aims to synthesize better human-like speech by incorporating diverse speech styles or emotions.
 While most expressive TTS models rely on reference speech to condition the style of the generated speech, they often fail to generate speech of regular quality.
 To ensure consistent speech quality, we propose an expressive TTS conditioned on style representation extracted from the text itself.
-To implement this text-based style predictor, we designed a style module incorporating vector quantization.
-Furthermore, the style representation is enhanced through style-to-text alignment and a sine generator accompanied with style tags.
+To implement this text-based style predictor, we design a style module incorporating residual vector quantization.
+Furthermore, the style representation is enhanced through style-to-text alignment and a mel decoder with style hierarchical layer normalization (SHLN).
 Our experimental findings demonstrate that our proposed model accurately estimates style representation, enabling the generation of high-quality speech without the need for reference speech.</p>
 
 <h2><p class="toc_title">Contents</p></h2>
@@ -70,9 +70,9 @@ M2: StyleSpeech<br>
 M3: Meta-StyleSpeech<br>
 M4: FastSpeech2-GST<br>
 M5: Proposed model<br>
-M6: Proposed model (w/o sine generator)<br>
-M7: Proposed model (w/o vector quantization)<br>
-M8: Proposed model (w/o style-to-text alignment)<br>
+M6: Proposed model (w/o style-to-text-alignment)<br>
+M7: Proposed model (w/o SHLN)<br>
+M8: Proposed model (w/ SALN, w/o SHLN)<br>
 </p>
 <br>
 <hr>
